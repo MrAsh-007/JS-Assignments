@@ -56,12 +56,31 @@ document.writeln("<br> ");
 document.writeln("<br> <b>Q#2</b>");
 document.writeln("<br>");
 
+let a=2;
+let b=1;
+
+let result = --a;
+
+document.writeln("<br>The Result of <b>--a</b> is ",result);
+
+a=2;
+b=1;
+result = --a - --b;
+
+document.writeln("<br>The Result of <b>--a - --b</b> is ",result);
+
+a=2;
+b=1;
+result = --a - --b + ++b;
+
+document.writeln("<br>The Result of <b>--a - --b + ++b</b> is ",result);
 
 
+a=2;
+b=1;
+result = --a - --b + ++b + b--;
 
-
-
-
+document.writeln("<br>The Result of <b>--a - --b + ++b + b--</b> is ",result);
 
 
 
