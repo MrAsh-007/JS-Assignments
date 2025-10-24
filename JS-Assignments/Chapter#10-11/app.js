@@ -280,3 +280,18 @@ document.writeln("<br>");
 document.writeln("<br><b>Q#11</b>");
 document.writeln("<br>");
 
+let firstNumber = +prompt("Enter First Number");
+let operation = prompt("Enter Operation");
+let secondNumber = +prompt("Enter Second Number");
+
+if(operation == "+"){
+    document.writeln(firstNumber+secondNumber);
+}else if(operation == "-"){
+    document.writeln(firstNumber-secondNumber);
+}else if(operation == "*"){
+    document.writeln(firstNumber*secondNumber);
+}else if(operation == "/"){
+    document.writeln(firstNumber/secondNumber);
+}else if(operation == "%"){
+    document.writeln(firstNumber%secondNumber);
+}
