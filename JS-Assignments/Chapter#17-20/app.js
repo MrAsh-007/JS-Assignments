@@ -115,3 +115,53 @@ document.writeln("<br>");
 // Answer Code
 document.writeln("<br><b>Q#6</b>");
 document.writeln("<br>");
+
+// a
+document.writeln(`<br><b>Counting:</b><br>`);
+for(let i=1; i <= 15; i++){
+    document.writeln(i);
+}
+
+document.writeln("<br>");
+
+// b
+document.writeln(`<br><b>Reverse counting:</b><br>`);
+for(let i=10; i >= 1; i--){
+    document.writeln(i);
+}
+
+document.writeln("<br>");
+
+// c
+document.writeln(`<br><b>Even:</b><br>`);
+for(let i=0; i <=20; i++){
+    if(i % 2 == 0 ){
+        document.writeln(i);
+    }
+}
+
+document.writeln("<br>");
+
+
+// d
+document.writeln(`<br><b>Odd:</b><br>`);
+for(let i=1; i <=19; i++){
+    if(i % 2 == !0 ){
+        document.writeln(i);
+    }
+}
+
+
+document.writeln("<br>");
+
+
+// e
+document.writeln(`<br><b>Series:</b><br>`);
+for(let i = 2; i <= 20; i++){
+    if(i % 2 == 0){
+        document.writeln(i+"k")
+    }
+    
+}
+
+document.writeln("<br>");
