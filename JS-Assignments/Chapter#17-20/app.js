@@ -30,9 +30,11 @@ matrixArray=[
     [2, 1, 0, 1]
 ]
 
-
-for(let i = 0; i < matrixArray.length; i++){
-    document.writeln(matrixArray[i].join(" ")+"<br>");
+for(let i =0; i < matrixArray.length; i++){
+for(let j =0; j < matrixArray[i].length; j++){
+    document.writeln(matrixArray[i][j]);
+}
+document.writeln("<br>");
 }
 
 
@@ -163,5 +165,102 @@ for(let i = 2; i <= 20; i++){
     }
     
 }
+
+document.writeln("<br>");
+
+
+
+
+
+
+// Q#7
+// Answer Code
+document.writeln("<br><b>Q#7</b>");
+document.writeln("<br>");
+
+
+
+let items = ["cake", "apple pie", "cookie", "chips", "patties"];
+let ask = prompt("Welcome to Sugar Bakers. What would you like to order?");
+let flag = false;
+
+
+for (i = 0; i <= items.length; i++){
+    if(ask == items[i]){
+        document.writeln(`${ask} is <b>available</b> at index ${items.indexOf(ask)}`);
+        flag = true;
+        break
+    }
+}
+
+if(flag==false){
+    document.writeln(`we are sorry, ${ask} is <b>not available</b> at our bakery`);
+
+}
+
+
+
+document.writeln("<br>");
+
+
+
+
+
+
+// Q#8
+// Answer Code
+document.writeln("<br><b>Q#8</b>");
+document.writeln("<br>");
+
+let randomNumbersArray = [24,53,78,91,12];
+
+document.writeln(`Numbers Array:<br> ${randomNumbersArray}`);
+randomNumbersArray.sort((a,b)=>b-a);
+document.writeln(`<br>The <b>Largest</b> number is: <b>${randomNumbersArray[0]}</b>`);
+
+
+document.writeln("<br>");
+
+
+
+
+
+
+
+// Q#9
+// Answer Code
+document.writeln("<br><b>Q#9</b>");
+document.writeln("<br>");
+
+randomNumbersArray= [24,53,78,91,12];
+
+document.writeln(`Numbers Array:<br> ${randomNumbersArray}`);
+randomNumbersArray.sort((a,b)=>a-b);
+document.writeln(`<br>The <b>Smallest</b> number is: <b>${randomNumbersArray[0]}</b>`);
+
+
+
+
+document.writeln("<br>");
+
+
+
+
+
+
+// Q#10
+// Answer Code
+document.writeln("<br><b>Q#10</b>");
+document.writeln("<br>");
+
+
+
+for (i = 1; i <= 100; i++){
+    if( i % 5 == 0){
+        document.writeln(i)
+    }
+}
+
+
 
 document.writeln("<br>");
