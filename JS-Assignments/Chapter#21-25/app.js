@@ -236,3 +236,54 @@ document.writeln("<br>");
 // Answer Code
 document.writeln("<br><b>Q#11</b>");
 document.writeln("<br>");
+
+let userTitleInput = prompt("Enter A Title");
+
+document.writeln(`<br>User Input: ${userTitleInput}`);
+document.writeln(`<br>Title Case: ${userTitleInput[0].toUpperCase()}${userTitleInput.slice(1)}`);
+
+
+document.writeln("<br>");
+
+
+
+
+
+// Q#12
+// Answer Code
+document.writeln("<br><b>Q#12</b>");
+document.writeln("<br>");
+
+let num = 35.36;
+document.writeln(`<br>Number: ${num}`);
+
+num = num.toString().replace(".","");
+document.writeln(`<br>Result: ${num}`);
+
+
+document.writeln("<br>");
+
+
+
+
+
+
+// Q#13
+// Answer Code
+document.writeln("<br><b>Q#13</b>");
+document.writeln("<br>");
+
+
+
+document.writeln("<br>");
+
+
+
+
+// Q#14
+// Answer Code
+document.writeln("<br><b>Q#14</b>");
+document.writeln("<br>");
+
+
+document.writeln("<br>");
