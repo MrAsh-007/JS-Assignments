@@ -125,18 +125,30 @@
 
 
 
-// Q#5
-// Answer Code
-document.writeln(`<br><b>Q#5</b>`);
-document.writeln(`<br>`);
+// // Q#5
+// // Answer Code
+// document.writeln(`<br><b>Q#5</b>`);
+// document.writeln(`<br>`);
+
+// function myIndexOf(paragraph, char){
+
+//     let index = [];
+
+//     for(let i = 0; i < paragraph.length; i++){
+//         if(paragraph[i] == char){
+//             index.push(i);
+//         }
+//     }
+
+//     document.writeln(`<br>${paragraph}`);
+//     document.writeln(`<br>Index of ${char} is ${index}`);
+// }
+// myIndexOf(prompt(`type a paragraph`), prompt(`Enter a character to find its Index \nNote: Its Case Sensitive`));
 
 
 
 
-
-
-
-document.writeln(`<br>`);
+// document.writeln(`<br>`);
 
 
 
@@ -296,18 +308,30 @@ document.writeln(`<br>`);
 
 
 
-// Q#9
-// Answer Code
-document.writeln(`<br><b>Q#9</b>`);
-document.writeln(`<br>`);
+// // Q#9
+// // Answer Code
+// document.writeln(`<br><b>Q#9</b>`);
+// document.writeln(`<br>`);
+
+// function employeeOvertime(workHours) {
+
+//     let overTime = 0;
+//     let overTimePay = 0;
+//     if (workHours > 40) {
+//         overTime = workHours - 40;
+//         overTimePay = overTime * 12;
+//         document.writeln(`<br>The Over Time is <b>${overTime} hour/s</b> and The Overtime Pay is <b>Rs${overTimePay}</b>`);
+//     } else {
+//         document.writeln(`<br>No Overtime, No Overtime Pay`);
+//     }
+
+// }
+// employeeOvertime(+prompt(`Enter your total working hours to calculate your Overtime Pay`));
 
 
 
 
-
-
-
-document.writeln(`<br>`);
+// document.writeln(`<br>`);
 
 
 
@@ -320,6 +344,31 @@ document.writeln(`<br>`);
 // Answer Code
 document.writeln(`<br><b>Q#10</b>`);
 document.writeln(`<br>`);
+
+function cashier(amount) {
+
+    if (amount < 10) {
+        document.writeln(`<br>The amount to withdraw must be atleast <b>Rs10</b>.`);
+    } else {
+
+        let hundreds = Math.floor(amount / 100);
+        let remainder = amount % 100;
+
+        let fifties = Math.floor(remainder / 50);
+        remainder = remainder % 50;
+
+        let tens = Math.floor(remainder / 10);
+        remainder = remainder % 10;
+
+        let fiveCoins = Math.floor(remainder / 5);
+        remainder = remainder % 5;
+
+        let oneCoins = remainder / 1;
+
+        document.write(`You will have ${hundreds} hundred notes, ${fifties} fifty notes, ${tens} ten notes, ${fiveCoins} five coins and ${oneCoins} one coins.`);
+    }
+}
+cashier(+prompt(`Enter amount to withdraw`));
 
 
 
