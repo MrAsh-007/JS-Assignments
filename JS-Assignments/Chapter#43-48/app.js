@@ -4,5 +4,28 @@
 
 // Q#1
 // Answer Code
-document.writeln(`<br><b>Q#1</b>`);
-document.writeln(`<br>`);
+
+
+
+// JS is Inline
+
+
+
+
+
+
+// Q#2
+// Answer Code
+
+
+
+
+
+
+
+// Q#3
+// Answer Code
+
+function deleteData() {
+    
+}
